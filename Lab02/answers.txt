@@ -1,0 +1,2 @@
+Câu 1: Khi chọn "Cancel", hàm JOptionPane.showConfirmDialog trả về giá trị JOptionPane.CANCEL_OPTION (giá trị số -1). Trong đoạn code mẫu, điều kiện option == JOptionPane.YES_OPTION ? "Yes" : "No" sẽ coi "Cancel" giống như lựa chọn "No".
+Câu 2: Để thay đổi các nút bấm, ta dùng phương thức JOptionPane.showOptionDialog và truyền một mảng chuỗi (ví dụ: String[] options = {"I do", "I don't"};) vào tham số options.
