@@ -1,2 +1,6 @@
+Câu 5
 Không, Java KHÔNG cho phép
 Giải thích: Cả hai constructor này đều có cùng chữ ký phương thức (method signature) là DigitalVideoDisc(String). Trong Java, việc nạp chồng (overloading) đòi hỏi danh sách tham số phải khác nhau về số lượng tham số, kiểu dữ liệu hoặc thứ tự kiểu dữ liệu. Trình biên dịch Java phân biệt các constructor nạp chồng dựa trên kiểu dữ liệu của tham số chứ không dựa vào tên của tham số (title hay category)
+Câu 9
+So sánh: Phiên bản nhận mảng (DigitalVideoDisc[]) bắt buộc người gọi phải tạo một đối tượng mảng trước khi truyền vào. Phiên bản Varargs (DigitalVideoDisc...) linh hoạt hơn vì cho phép truyền nhiều tham số phân tách bằng dấu phẩy trực tiếp hoặc truyền một mảng có sẵn.
+Lựa chọn: Ưu tiên phiên bản Varargs vì cú phal gọi phương thức ngắn gọn, thuận tiện và linh hoạt hơn cho người sử dụng.

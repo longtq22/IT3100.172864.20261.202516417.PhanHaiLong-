@@ -56,4 +56,42 @@ public class Cart {
         System.out.println("Total cost: " + totalCost());
         System.out.println("***************************************************");
     }
+    // --- MỤC 9.1: Nạp chồng truyền vào Mảng (Array) ---
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        if (dvdList == null || dvdList.length == 0) {
+            System.out.println("The list is empty!");
+            return;
+        }
+        for (DigitalVideoDisc disc : dvdList) {
+            if (qtyOrdered >= MAX_NUMBERS_ORDERED) {
+                System.out.println("The cart is almost full! Cannot add more discs.");
+                break;
+            } else {
+                itemsOrdered[qtyOrdered] = disc;
+                qtyOrdered++;
+                System.out.println("The disc \"" + disc.getTitle() + "\" has been added.");
+            }
+        }
+    }
+
+    /*
+    // --- MỤC 9.1: Nạp chồng truyền vào Varargs ---
+    public void addDigitalVideoDisc(DigitalVideoDisc... dvdList) {
+        for (DigitalVideoDisc disc : dvdList) {
+            if (qtyOrdered >= MAX_NUMBERS_ORDERED) {
+                System.out.println("The cart is almost full! Cannot add more discs.");
+                break;
+            } else {
+                itemsOrdered[qtyOrdered] = disc;
+                qtyOrdered++;
+                System.out.println("The disc \"" + disc.getTitle() + "\" has been added.");
+            }
+        }
+    }
+    */
+    // --- MỤC 9.2: Nạp chồng truyền vào chính xác 2 đĩa DVD ---
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        addDigitalVideoDisc(dvd1);
+        addDigitalVideoDisc(dvd2);
+    }
 }
