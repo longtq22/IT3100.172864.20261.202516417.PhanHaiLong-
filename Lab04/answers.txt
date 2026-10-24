@@ -1,0 +1,2 @@
+Không, Java KHÔNG cho phép
+Giải thích: Cả hai constructor này đều có cùng chữ ký phương thức (method signature) là DigitalVideoDisc(String). Trong Java, việc nạp chồng (overloading) đòi hỏi danh sách tham số phải khác nhau về số lượng tham số, kiểu dữ liệu hoặc thứ tự kiểu dữ liệu. Trình biên dịch Java phân biệt các constructor nạp chồng dựa trên kiểu dữ liệu của tham số chứ không dựa vào tên của tham số (title hay category)
