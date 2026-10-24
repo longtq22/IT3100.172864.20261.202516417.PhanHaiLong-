@@ -58,4 +58,7 @@ public class DigitalVideoDisc {
     public String getDirector() { return director; }
     public int getLength() { return length; }
     public float getCost() { return cost; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
