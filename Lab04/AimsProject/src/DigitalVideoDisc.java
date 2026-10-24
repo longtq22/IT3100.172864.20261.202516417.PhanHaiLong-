@@ -1,20 +1,15 @@
 public class DigitalVideoDisc {
-    // 1. Các thuộc tính riêng tư (Private attributes)
     private String title;
     private String category;
     private String director;
     private int length;
     private float cost;
 
-    // 2. Các phương thức khởi tạo (Constructors - Nạp chồng)
-    
-    // Constructor 1: Tạo DVD theo tiêu đề
     public DigitalVideoDisc(String title) {
         super();
         this.title = title;
     }
 
-    // Constructor 2: Tạo DVD theo thể loại, tiêu đề và giá tiền
     public DigitalVideoDisc(String category, String title, float cost) {
         super();
         this.category = category;
@@ -22,7 +17,6 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
-    // Constructor 3: Tạo DVD theo đạo diễn, thể loại, tiêu đề và giá tiền
     public DigitalVideoDisc(String director, String category, String title, float cost) {
         super();
         this.director = director;
@@ -31,7 +25,6 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
-    // Constructor 4: Tạo DVD theo đầy đủ thuộc tính
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
         super();
         this.title = title;
@@ -41,7 +34,6 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
-    // 3. Các phương thức truy xuất (Getters)
     public String getTitle() {
         return title;
     }
@@ -60,5 +52,8 @@ public class DigitalVideoDisc {
 
     public float getCost() {
         return cost;
+    }
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

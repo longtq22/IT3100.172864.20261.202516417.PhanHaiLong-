@@ -4,3 +4,9 @@ Giải thích: Cả hai constructor này đều có cùng chữ ký phương th�
 Câu 9
 So sánh: Phiên bản nhận mảng (DigitalVideoDisc[]) bắt buộc người gọi phải tạo một đối tượng mảng trước khi truyền vào. Phiên bản Varargs (DigitalVideoDisc...) linh hoạt hơn vì cho phép truyền nhiều tham số phân tách bằng dấu phẩy trực tiếp hoặc truyền một mảng có sẵn.
 Lựa chọn: Ưu tiên phiên bản Varargs vì cú phal gọi phương thức ngắn gọn, thuận tiện và linh hoạt hơn cho người sử dụng.
+Câu 10
+1.Java truyền tham số theo cơ chế Pass by Value. 
+Khi truyền các biến tham chiếu jungleDVD và cinderellaDVD vào hàm swap, Java tạo ra các bản sao (copy) của hai địa chỉ tham chiếu đó gán cho biến cục bộ o1 và o2. 
+Việc hoán đổi o1 và o2 bên trong hàm swap chỉ có tác dụng trên hai biến cục bộ này, hoàn toàn không làm thay đổi hai tham chiếu gốc jungleDVD và cinderellaDVD ở hàm main.
+2.Biến cục bộ dvd trong hàm changeTitle nhận bản sao địa chỉ tham chiếu trỏ cùng tới đối tượng jungleDVD ở bộ nhớ Heap. Khi gọi dvd.setTitle(title), phương thức này truy cập trực tiếp và thay đổi trạng thái thuộc tính title của chính đối tượng đó thành "Cinderella". 
+Dòng lệnh ngay sau dvd = new DigitalVideoDisc(oldTitle); chỉ gán biến cục bộ dvd trỏ sang một đối tượng mới, không ảnh hưởng đến đối tượng gốc jungleDVD.
